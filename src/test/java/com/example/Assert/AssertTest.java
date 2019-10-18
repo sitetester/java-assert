@@ -35,6 +35,15 @@ public class AssertTest {
         assertFalse(Assert.directoryExists("src/test/resources123"));
     }
 
+    @Test
+    public void directoryIsReadable() {
+        assertTrue(Assert.directoryIsReadable("src/test/resources"));
+        assertFalse(Assert.directoryIsReadable("src/test/resources123"));
+    }
 
+    @Test
+    public void directoryIsWritable() {
+        assertTrue(Assert.directoryIsWritable("src/test/resources"));
+    }
 
 }

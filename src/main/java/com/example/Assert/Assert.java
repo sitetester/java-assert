@@ -23,4 +23,16 @@ class Assert {
     static boolean directoryExists(String path) {
         return new File(path).isDirectory();
     }
+
+    static boolean directoryIsReadable(String path) {
+        var file = new File(path);
+
+        return file.isDirectory() && file.canRead();
+    }
+
+    static boolean directoryIsWritable(String path) {
+        var file = new File(path);
+
+        return file.isDirectory() && file.canWrite();
+    }
 }
