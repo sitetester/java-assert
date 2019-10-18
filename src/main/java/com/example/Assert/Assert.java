@@ -15,4 +15,8 @@ class Assert {
     static boolean fileIsReadable(String path) {
         return new File(path).canRead();
     }
+
+    static boolean fileIsWritable(String path) {
+        return new File(path).canWrite();
+    }
 }

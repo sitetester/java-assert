@@ -23,4 +23,10 @@ public class AssertTest {
     public void fileIsReadable() {
         assertTrue(Assert.fileIsReadable("src/test/resources/dummy1.txt"));
     }
+
+    @Test
+    public void fileIsWritable() {
+        assertTrue(Assert.fileIsWritable("src/test/resources/dummy1.txt"));
+    }
+
 }
