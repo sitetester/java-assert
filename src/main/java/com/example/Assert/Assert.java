@@ -19,4 +19,8 @@ class Assert {
     static boolean fileIsWritable(String path) {
         return new File(path).canWrite();
     }
+
+    static boolean directoryExists(String path) {
+        return new File(path).isDirectory();
+    }
 }

@@ -29,4 +29,12 @@ public class AssertTest {
         assertTrue(Assert.fileIsWritable("src/test/resources/dummy1.txt"));
     }
 
+    @Test
+    public void directoryExists() {
+        assertTrue(Assert.directoryExists("src/test/resources"));
+        assertFalse(Assert.directoryExists("src/test/resources123"));
+    }
+
+
+
 }
