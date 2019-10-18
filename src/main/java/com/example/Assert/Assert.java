@@ -44,11 +44,19 @@ class Assert {
         return value == true;
     }
 
-    static boolean greaterThan(int param1, int param2) {
-        return param1 > param2;
+    static boolean greaterThan(int expected, int actual) {
+        return expected > actual;
     }
 
-    static boolean lessThan(int param1, int param2) {
-        return param1 < param2;
+    static boolean greaterThanOrEqual(int expected, int actual) {
+        return expected >= actual;
+    }
+
+    static boolean lessThan(int expected, int actual) {
+        return expected < actual;
+    }
+
+    static boolean lessThanOrEqual(int expected, int actual) {
+        return expected <= actual;
     }
 }

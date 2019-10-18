@@ -66,8 +66,23 @@ public class AssertTest {
     }
 
     @Test
+    public void greaterThanOrEqual() {
+        assertTrue(Assert.greaterThanOrEqual(2, 1));
+        assertTrue(Assert.greaterThanOrEqual(2, 2));
+        assertFalse(Assert.greaterThanOrEqual(1, 2));
+    }
+
+
+    @Test
     public void lessThan() {
         assertTrue(Assert.lessThan(1, 2));
-        assertFalse(Assert.lessThan(2, 1));
+        assertFalse(Assert.lessThan(1, 1));
+    }
+
+    @Test
+    public void lessThanOrEqual() {
+        assertTrue(Assert.lessThanOrEqual(1, 2));
+        assertTrue(Assert.lessThanOrEqual(1, 1));
+        assertFalse(Assert.lessThanOrEqual(2, 1));
     }
 }
