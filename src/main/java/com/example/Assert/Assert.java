@@ -35,4 +35,12 @@ class Assert {
 
         return file.isDirectory() && file.canWrite();
     }
+
+    static boolean False(Boolean value) {
+        return value == false;
+    }
+
+    static boolean True(Boolean value) {
+        return value == true;
+    }
 }

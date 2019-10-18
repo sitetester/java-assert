@@ -46,4 +46,16 @@ public class AssertTest {
         assertTrue(Assert.directoryIsWritable("src/test/resources"));
     }
 
+    @Test
+    public void booleanFalse() {
+        assertTrue(Assert.False(Boolean.valueOf(false)));
+        assertTrue(Assert.False(Boolean.valueOf("false")));
+    }
+
+    @Test
+    public void booleanTrue() {
+        assertTrue(Assert.True(Boolean.valueOf(true)));
+        assertTrue(Assert.True(Boolean.valueOf("true")));
+    }
+
 }
