@@ -58,4 +58,16 @@ public class AssertTest {
         assertTrue(Assert.True(Boolean.valueOf("true")));
     }
 
+
+    @Test
+    public void greaterThan() {
+        assertTrue(Assert.greaterThan(2, 1));
+        assertFalse(Assert.greaterThan(1, 2));
+    }
+
+    @Test
+    public void lessThan() {
+        assertTrue(Assert.lessThan(1, 2));
+        assertFalse(Assert.lessThan(2, 1));
+    }
 }
