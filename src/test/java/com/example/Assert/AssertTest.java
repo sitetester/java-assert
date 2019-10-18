@@ -13,14 +13,14 @@ public class AssertTest {
         assertFalse(Assert.fileExists("src/test/resources/dummy123.txt"));
     }
 
-    /*@Test
+    @Test
     public void fileEquals() {
-        assertTrue(this.validator.fileEquals("src/test/resources/dummy1.txt", "src/test/resources/dummy2.txt"));
-        assertFalse(this.validator.fileEquals("src/test/resources/dummy1.txt", "src/test/resources/dummy3.txt"));
+        assertTrue(Assert.fileEquals("src/test/resources/dummy1.txt", "src/test/resources/dummy2.txt"));
+        assertFalse(Assert.fileEquals("src/test/resources/dummy1.txt", "src/test/resources/dummy3.txt"));
     }
 
     @Test
     public void fileIsReadable() {
-        assertTrue(this.validator.fileIsReadable("src/test/resources/dummy1.txt"));
-    }*/
+        assertTrue(Assert.fileIsReadable("src/test/resources/dummy1.txt"));
+    }
 }
