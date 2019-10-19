@@ -85,4 +85,8 @@ class Assert {
     static boolean isSpaceOnly(String input) {
         return input.trim().equals("");
     }
+
+    static boolean divisibleBy(int dividend, int divisor) {
+        return dividend % divisor == 0;
+    }
 }

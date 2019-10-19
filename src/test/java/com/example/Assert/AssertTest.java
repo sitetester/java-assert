@@ -119,4 +119,10 @@ public class AssertTest {
         assertTrue(Assert.isSpaceOnly(" \t "));
         assertFalse(Assert.isSpaceOnly(". "));
     }
+
+    @Test
+    public void divisibleBy() {
+        assertTrue(Assert.divisibleBy(9, 3));
+        assertFalse(Assert.divisibleBy(8, 3));
+    }
 }
