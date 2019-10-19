@@ -102,4 +102,8 @@ class Assert {
     static boolean regexMatch(String regex, String expected) {
         return Pattern.compile(regex).matcher(expected).find() == true;
     }
+
+    static boolean endsWith(String expected, String suffix) {
+        return expected.endsWith(suffix);
+    }
 }

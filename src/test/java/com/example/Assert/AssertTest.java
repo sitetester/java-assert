@@ -143,4 +143,10 @@ public class AssertTest {
         assertTrue(Assert.regexMatch("[0-9]+", "123"));
         assertFalse(Assert.regexMatch("[a-z]+", "123"));
     }
+
+    @Test
+    public void endsWith() {
+        assertTrue(Assert.endsWith("lorem ipsum", "ipsum"));
+        assertFalse(Assert.endsWith("lorem ipsum", "lorem"));
+    }
 }
