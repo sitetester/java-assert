@@ -103,6 +103,10 @@ class Assert {
         return Pattern.compile(regex).matcher(expected).find() == true;
     }
 
+    static boolean startsWith(String expected, String prefix) {
+        return expected.startsWith(prefix);
+    }
+
     static boolean endsWith(String expected, String suffix) {
         return expected.endsWith(suffix);
     }

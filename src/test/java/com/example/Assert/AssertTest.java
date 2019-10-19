@@ -145,6 +145,12 @@ public class AssertTest {
     }
 
     @Test
+    public void startsWith() {
+        assertTrue(Assert.startsWith("lorem ipsum", "lorem"));
+        assertFalse(Assert.startsWith("lorem ipsum", "ipsum"));
+    }
+
+    @Test
     public void endsWith() {
         assertTrue(Assert.endsWith("lorem ipsum", "ipsum"));
         assertFalse(Assert.endsWith("lorem ipsum", "lorem"));
