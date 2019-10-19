@@ -69,4 +69,8 @@ class Assert {
 
         return true;
     }
+
+    static boolean stringContainsString(String expected, String actual) {
+        return actual.contains(expected);
+    }
 }
