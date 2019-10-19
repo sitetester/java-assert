@@ -93,4 +93,8 @@ class Assert {
     static boolean isBoolean(String expected) {
         return expected.equals("false") || expected.equals("true");
     }
+
+    static boolean isNull(String expected) {
+        return expected == null;
+    }
 }

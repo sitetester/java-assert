@@ -131,4 +131,10 @@ public class AssertTest {
         assertTrue(Assert.isBoolean("true"));
         assertFalse(Assert.isBoolean("true123"));
     }
+
+    @Test
+    public void isNull() {
+        assertTrue(Assert.isNull(null));
+        assertFalse(Assert.isNull("null"));
+    }
 }
