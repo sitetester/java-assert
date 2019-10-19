@@ -88,13 +88,19 @@ public class AssertTest {
 
     @Test
     public void isInt() {
-        assertTrue(Assert.isInt("1" ));
-        assertFalse(Assert.isInt("abc" ));
+        assertTrue(Assert.isInt("1"));
+        assertFalse(Assert.isInt("abc"));
     }
 
     @Test
     public void stringContainsString() {
-        assertTrue(Assert.stringContainsString("lorem", "lorem ipsum" ));
+        assertTrue(Assert.stringContainsString("lorem", "lorem ipsum"));
+        assertFalse(Assert.stringContainsString("abc123", "lorem ipsum"));
+    }
+
+    @Test
+    public void stringContainsStringIgnoreCase() {
+        assertTrue(Assert.stringContainsStringIgnoreCase("LoreM", "lorem ipsum"));
         assertFalse(Assert.stringContainsString("abc123", "lorem ipsum" ));
     }
 }
