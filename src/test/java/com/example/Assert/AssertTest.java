@@ -101,6 +101,13 @@ public class AssertTest {
     @Test
     public void stringContainsStringIgnoreCase() {
         assertTrue(Assert.stringContainsStringIgnoreCase("LoreM", "lorem ipsum"));
-        assertFalse(Assert.stringContainsString("abc123", "lorem ipsum" ));
+        assertFalse(Assert.stringContainsStringIgnoreCase("abc123", "lorem ipsum" ));
+    }
+
+    @Test
+    public void stringContainsOnly() {
+        assertTrue(Assert.stringContainsOnly("lorem", "lorem"));
+        assertFalse(Assert.stringContainsOnly("lorem", "lorem ipsum"));
+        assertFalse(Assert.stringContainsOnly("abc123", "lorem ipsum" ));
     }
 }

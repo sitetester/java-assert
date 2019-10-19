@@ -77,4 +77,8 @@ class Assert {
     static boolean stringContainsStringIgnoreCase(String expected, String actual) {
         return actual.toLowerCase().contains(expected.toLowerCase());
     }
+
+    static boolean stringContainsOnly(String expected, String actual) {
+        return actual.equals(expected);
+    }
 }
