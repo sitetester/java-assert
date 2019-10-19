@@ -81,4 +81,8 @@ class Assert {
     static boolean stringContainsOnly(String expected, String actual) {
         return actual.equals(expected);
     }
+
+    static boolean isSpaceOnly(String input) {
+        return input.trim().equals("");
+    }
 }

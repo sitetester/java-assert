@@ -110,4 +110,13 @@ public class AssertTest {
         assertFalse(Assert.stringContainsOnly("lorem", "lorem ipsum"));
         assertFalse(Assert.stringContainsOnly("abc123", "lorem ipsum" ));
     }
+
+    @Test
+    public void isSpaceOnly() {
+        assertTrue(Assert.isSpaceOnly(""));
+        assertTrue(Assert.isSpaceOnly(" "));
+        assertTrue(Assert.isSpaceOnly("\t"));
+        assertTrue(Assert.isSpaceOnly(" \t "));
+        assertFalse(Assert.isSpaceOnly(". "));
+    }
 }
