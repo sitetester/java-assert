@@ -85,4 +85,10 @@ public class AssertTest {
         assertTrue(Assert.lessThanOrEqual(1, 1));
         assertFalse(Assert.lessThanOrEqual(2, 1));
     }
+
+    @Test
+    public void isInt() {
+        assertTrue(Assert.isInt("1" ));
+        assertFalse(Assert.isInt("abc" ));
+    }
 }

@@ -59,4 +59,14 @@ class Assert {
     static boolean lessThanOrEqual(int expected, int actual) {
         return expected <= actual;
     }
+
+    static boolean isInt(String number) {
+        try {
+            Integer.parseInt(number);
+        } catch (NumberFormatException umberFormatException) {
+            return false;
+        }
+
+        return true;
+    }
 }
