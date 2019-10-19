@@ -1,6 +1,7 @@
 package com.example.Assert;
 
 import java.io.File;
+import java.util.regex.Pattern;
 
 class Assert {
 
@@ -96,5 +97,9 @@ class Assert {
 
     static boolean isNull(String expected) {
         return expected == null;
+    }
+
+    static boolean regexMatch(String regex, String expected) {
+        return Pattern.compile(regex).matcher(expected).find() == true;
     }
 }

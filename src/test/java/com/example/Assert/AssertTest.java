@@ -137,4 +137,10 @@ public class AssertTest {
         assertTrue(Assert.isNull(null));
         assertFalse(Assert.isNull("null"));
     }
+
+    @Test
+    public void regexMatch() {
+        assertTrue(Assert.regexMatch("[0-9]+", "123"));
+        assertFalse(Assert.regexMatch("[a-z]+", "123"));
+    }
 }
