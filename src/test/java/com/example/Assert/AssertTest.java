@@ -125,4 +125,10 @@ public class AssertTest {
         assertTrue(Assert.divisibleBy(9, 3));
         assertFalse(Assert.divisibleBy(8, 3));
     }
+
+    @Test
+    public void isBoolean() {
+        assertTrue(Assert.isBoolean("true"));
+        assertFalse(Assert.isBoolean("true123"));
+    }
 }

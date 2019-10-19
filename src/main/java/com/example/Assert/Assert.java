@@ -89,4 +89,8 @@ class Assert {
     static boolean divisibleBy(int dividend, int divisor) {
         return dividend % divisor == 0;
     }
+
+    static boolean isBoolean(String expected) {
+        return expected.equals("false") || expected.equals("true");
+    }
 }
